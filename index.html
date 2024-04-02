@@ -53,5 +53,35 @@
                 </div>
             </div>
         </nav>
+        <main class="container mx-auto flex max-w-6xl flex-col md:flex-row">
+            <div class="w-full max-w-[10rem] space-y-4 p-2">
+                <h2 class="text-2xl">Filters</h2>
+                <h3 class="text-xl">Category</h3>
+                <div id="filters-container" class="space-y-2 text-xl">
+                    <div>
+                        <input type="checkbox" id="cameras" class="check" />
+                        <label for="cameras">Cameras</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="smartphones" class="check" />
+                        <label for="smartphones">Smartphones</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="games" class="check" />
+                        <label for="games">Games</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="televisions" class="check" />
+                        <label for="televisions">Televisions</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Products Wrapper -->
+            <div
+                id="products-wrapper"
+                class="mx-auto grid w-full max-w-4xl grid-cols-2 place-content-center gap-6 p-4 sm:grid-cols-3 xl:grid-cols-4"
+            ></div>
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
