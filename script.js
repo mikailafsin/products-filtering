@@ -109,5 +109,33 @@ function createProductElement(product) {
         <p class="text-xl">${product.name}</p>
         <strong>${product.price.toLocaleString()}</strong>
     `;
+
+    productElement.querySelector(".status").addEventListener("click", updateCart);
+
     return productElement;
+}
+
+function updateCart(e) {
+    const statusEl = e.target;
+
+    if (statusEl.classList.contains("added")) {
+        // Remove from cart
+        statusEl.classList.remove("added");
+        statusEl.innerText = "Add to Cart";
+        statusEl.classList.remove("bg-red-600");
+        statusEl.classList.add("bg-black");
+
+        cartItemCount--;
+    } else {
+        // Add to cart
+        statusEl.classList.add("added");
+        statusEl.innerText = "Remove from Cart";
+        statusEl.classList.remove("bg-black");
+        statusEl.classList.add("bg-red-600");
+
+        cartItemCount++;
+    }
+
+    // Update cart item count
+    cartCount.innerText = cartItemCount.toString();
 }
