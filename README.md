@@ -28,8 +28,8 @@ This is a practice repository of the [Products Filtering UI](https://youtu.be/Hw
 
 ### Links
 
--   Solution URL: [GitHub]()
--   Live Site URL: [Vercel]()
+-   Solution URL: [GitHub](https://github.com/mikailafsin/products-filtering)
+-   Live Site URL: [Vercel](https://products-filtering-three.vercel.app/)
 
 ## My process
 
